@@ -1,6 +1,6 @@
 import './App.css'
 import Sidebar from './components/Sidebar/Sidebar.jsx'
-import Home from './components/Home/Home.jsx'
+import Home from './components/Home/Home.jsx';
 
 function App() {
 
