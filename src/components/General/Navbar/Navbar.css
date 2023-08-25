@@ -1,0 +1,84 @@
+.navbar {
+    background-color: var(--accent-lightblue);
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .nav-container {
+        height: 100%;
+        width: 100%;
+        max-width: 1920px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 30px;
+        color: var(--bg-white);
+
+        .left {
+            display: flex;
+            gap: 10px;
+            display: flex;
+            align-items: center;
+
+            .logo {
+                margin-bottom: 10px;
+            }
+        }
+
+        .navlinks {
+            display: flex;
+            gap: 30px;
+
+            > a {
+                color: inherit;
+                text-decoration: none;
+                display: flex;
+                flex-direction: column;
+                font-size: var(--font-p2);
+
+                &::after {
+                    content: '';
+                    width: 80%;
+                    align-self: center;
+                    height: 2px;
+                    border-radius: 1px;
+                }
+
+                &.active::after {
+                    background-color: var(--bg-white);
+                }
+
+                &:hover {
+                    
+
+                    &::after {
+                        background-color: var(--accent-blue);
+                    }
+                }
+            }
+        }
+
+        .right {
+            display: flex;
+            gap: 10px;
+
+            .login-btn {
+                background-color: transparent;
+                border: none;
+                color: inherit;
+                cursor: pointer;
+                font-size: var(--font-p2);
+            }
+
+            .register-btn {
+                padding: 10px 20px;
+                font-size: var(--font-p1);
+                background-color: var(--accent-blue);
+                color: inherit;
+                border: none;
+                border-radius: 10px;
+            }
+        }
+    }
+}
