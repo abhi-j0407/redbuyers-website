@@ -1,4 +1,5 @@
 import "./Hero.css";
+import Offer from "../Offer/Offer";
 
 const Hero = () => {
   return (
@@ -7,15 +8,7 @@ const Hero = () => {
         <div className="left">
           <div className="content">
             <h1>Get an Instant offer and sell your home</h1>
-            <form action="#" className="offer-form">
-              <img src="/assets/homepage/map.svg" alt="map" />
-              <input
-                type="text"
-                placeholder="Where's your house?"
-                className="input"
-              />
-              <button type="submit">Get my free offer</button>
-            </form>
+            <Offer />
             <p>Receive an offer within 24 hours, it&apos;s that simple!</p>
           </div>
         </div>
