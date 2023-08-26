@@ -1,0 +1,93 @@
+#section01 {
+  display: flex;
+  justify-content: center;
+  padding-block: 150px;
+  color: var(--text-primary);
+
+  .container {
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+
+    > h2 {
+      font-size: var(--font-h2);
+    }
+
+    > p {
+      font-size: var(--font-subh);
+    }
+
+    .content {
+      width: 100%;
+      display: flex;
+      margin-top: 20px;
+
+      .left {
+        width: 50%;
+        display: grid;
+        place-items: center;
+      }
+
+      .right {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        padding-left: 50px;
+
+        .steps {
+          display: flex;
+          flex-direction: column;
+          gap: 50px;
+          position: relative;
+
+          .line {
+            height: 75%;
+            width: 3px;
+            position: absolute;
+            top: 16%;
+            left: 3.25%;
+          }
+
+          .step {
+            display: flex;
+            gap: 50px;
+            z-index: 2;
+
+            .text {
+              display: flex;
+              flex-direction: column;
+              gap: 15px;
+
+              > p {
+                font-size: var(--font-p1);
+                color: var(--text-secondary);
+                max-width: 350px;
+              }
+
+              > h3 {
+                font-size: 28px;
+                text-transform: uppercase;
+                margin-top: 5px;
+              }
+            }
+
+            &::before {
+              content: url(/public/assets/homepage/charm_tick.svg);
+              background-color: var(--accent-blue);
+              border-radius: 50px;
+              height: 34px;
+              aspect-ratio: 1;
+              display: grid;
+              place-items: center;
+              padding-top: 4px;
+              margin-top: 8%;
+              box-shadow: 2px 2px 4px 0px rgba(0, 97, 223, 0.30);
+            }
+          }
+        }
+      }
+    }
+  }
+}

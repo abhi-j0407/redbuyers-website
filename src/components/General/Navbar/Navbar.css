@@ -12,7 +12,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-inline: 30px;
+        padding-inline: 50px;
         color: var(--bg-white);
 
         .left {
